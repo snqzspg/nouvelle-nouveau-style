@@ -1,0 +1,34 @@
+{
+	"name": "nouvelle-nouveau style",
+	"description": "[Alpha Edition] This attempts to display both nouvelle-nouveau and bruitdefond-blog Tumblr blogs in the style they used to be. Currently experimental.",
+	"version": "0.0.1",
+	"manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": ["*://nouvelle-nouveau.tumblr.com/*", "*://bruitdefond-blog.tumblr.com/*"],
+			"exclude_matches": [ "*://*/archive", "*://*/archive*" ],
+			"css": ["themecloud/core.css"],
+			"js": [
+				"googleapis/jquery.min.js",
+				"googleapis/jquery-ui.min.js",
+				"themecloud/easing.js",
+				"themecloud/jquery.tipsy.js",
+				"themecloud/getjs.asp",
+				"themecloud/common.js",
+				"themecloud/totop.js",
+				"tumblr/untitled.js",
+				"tumblr/jquery.lazyload.js",
+				"tumblr/tumblelog_post_message_queue.js",
+				"tumblr/cufon.js",
+				"tumblr/bebas.js",
+				"localscript1.js"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [ "themecloud/reblog.png", "themecloud/left.png", "themecloud/like.png", "themecloud/middle.png", "themecloud/right.png", "themecloud/shadow600.png", "themecloud/totop_1.png" ],
+			"matches": [ "*://nouvelle-nouveau.tumblr.com/*", "*://bruitdefond-blog.tumblr.com/*" ]
+		}
+	]
+}
