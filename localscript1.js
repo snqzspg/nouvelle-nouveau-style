@@ -5,9 +5,7 @@ $(document).ready(function() {
 GetPosts(3,"600");
     // ---- PG addition start ----
     fiximgs();
-    $(".more_notes_link").click(function(){
-        
-    });
+    $(".more_notes_link").click(function(){});
     // ---- PG addition end ----
 
 });
@@ -32,16 +30,22 @@ function fiximgs(){
         rblguis.eq(0).find("img").attr("src", chrome.runtime.getURL("themecloud/reblog.png"));
         var reblgurl = rblguis.eq(0).children("a").attr("href");
         var likeimg = rblguis.eq(1).find("img");
-        likeimg.attr("src", chrome.runtime.getURL("themecloud/like.png"));
-        likeimg.click(function(){
-            LikePost(likeimg.attr("id").replace("like_image_", ""), reblgurl);
-        });
+        if (likeimg.attr("src").indexOf("like2") == -1) {
+            likeimg.attr("src", chrome.runtime.getURL("themecloud/like.png"));
+        } else {
+            likeimg.attr("src", chrome.runtime.getURL("themecloud/like2.png"));
+        }
+        likeimg.unbind("click", likefx);
+        if (likeimg.attr("src").indexOf("like2") == -1) likeimg.bind("click", likefx);
         rblguis.eq(2).css("background-image", "url('" + chrome.runtime.getURL("themecloud/left.png") + "')");
         rblguis.eq(3).css("background-image", "url('" + chrome.runtime.getURL("themecloud/middle.png") + "')");
         rblguis.eq(4).css("background-image", "url('" + chrome.runtime.getURL("themecloud/right.png") + "')");
     });
-    $(".drop_shadow").each(function(i, e){
-        $(e).children("img").attr("src", chrome.runtime.getURL("themecloud/shadow600.png"));
-    });
+}
+
+function likefx(){
+    LikePost(this.id.replace("like_image_", ""), this.parentNode.parentNode.getElementsByClassName("reblog_etc")[0].firstChild.href, this);
+    this.src = chrome.runtime.getURL("themecloud/like2.png");
+    $(this).unbind("click", likefx);
 }
 // ---- PG addition end ----
