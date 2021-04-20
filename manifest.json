@@ -1,13 +1,17 @@
 {
 	"name": "nouvelle-nouveau style",
 	"description": "[Alpha Edition] This attempts to display both nouvelle-nouveau and bruitdefond-blog Tumblr blogs in the style they used to be. Currently experimental.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"manifest_version": 3,
 	"content_scripts": [
 		{
-			"matches": ["*://nouvelle-nouveau.tumblr.com/*", "*://bruitdefond-blog.tumblr.com/*"],
+			"matches": [
+				"*://nouvelle-nouveau.tumblr.com/*",
+				"*://bruitdefond-blog.tumblr.com/*",
+				"*://themecloudsupport.tumblr.com/*"
+			],
 			"exclude_matches": [ "*://*/archive", "*://*/archive*" ],
-			"css": ["themecloud/core.css"],
+			"css": [ "themecloud/core.css", "localcss.css" ],
 			"js": [
 				"googleapis/jquery.min.js",
 				"googleapis/jquery-ui.min.js",
@@ -27,8 +31,21 @@
 	],
 	"web_accessible_resources": [
 		{
-			"resources": [ "themecloud/reblog.png", "themecloud/left.png", "themecloud/like.png", "themecloud/middle.png", "themecloud/right.png", "themecloud/shadow600.png", "themecloud/totop_1.png" ],
-			"matches": [ "*://nouvelle-nouveau.tumblr.com/*", "*://bruitdefond-blog.tumblr.com/*" ]
+			"resources": [
+				"themecloud/reblog.png",
+				"themecloud/left.png",
+				"themecloud/like.png",
+				"themecloud/like2.png",
+				"themecloud/middle.png",
+				"themecloud/right.png",
+				"themecloud/shadow600.png",
+				"themecloud/totop_1.png"
+			],
+			"matches": [
+				"*://nouvelle-nouveau.tumblr.com/*",
+				"*://bruitdefond-blog.tumblr.com/*",
+				"*://themecloudsupport.tumblr.com/*"
+			]
 		}
 	]
 }
