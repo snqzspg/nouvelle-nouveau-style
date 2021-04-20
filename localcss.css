@@ -1,0 +1,5 @@
+.photoset:hover .notes2, .audio:hover .notes2{
+	opacity: 1;
+	filter: alpha(opacity=100);
+	top: 45%;
+}
