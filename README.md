@@ -17,10 +17,15 @@ Currently I have not published this extension on the Chrome Web Store, and thus 
 It is also important to have the practice to disable all Developer Mode extensions when you don't need to use them and re-enable them when you need them again. 
 
 ## How to install?
-There are two ways.
-First is to download the crx release on the right, enable Developer Mode in Chrome (or any Chromium-based browsers), then drag the crx file into the extensions page.
-
-Second is to clone this repository, enable Developer Mode in Chrome (or any Chromium-based browsers), click "Load Unpacked", and select the folder for the main branch of this repository on your computer.
+Release: https://github.com/snqzspg/nouvelle-nouveau-style/releases
+  1. Download either the release or clone this repository
+  2. Extract the crx / zip file
+  3. Open Extensions Page in your Chromium-based browser (Google Chrome)
+  4. Enable Developer Mode
+  5. Drag the extracted folder (nouvelle-nouveau-style-main folder if you cloned the repository) into the Extensions Page
+  6. Ensure the extension is enabled
+  7. Visit https://nouvelle-nouveau.tumblr.com/ (**Note**: If you visit in incognito or private browsing you'll need to allow this extension in incognito or private)
+  8. Once you think you do not need to visit a page that requires this extension to display properly, go back to the Extensions Page and disable Developer Mode.
 
 *Reminder to have the habit to disable this extension when you are not visiting [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) or any thematically related blogs.*
 
@@ -35,4 +40,4 @@ This is still experimental and does not fully restore all the petty functionalit
 ### Does one really need this extension to browse nouvelle-nouveau?
 Short answer is no. You can browse throught the [archive page](https://nouvelle-nouveau.tumblr.com/archive) without this extension. This extension is mainly to bring back the original aesthetics of the blog. This helps in realising how the artsy content posted by L.L. complements with the layout of the original blog user interface to bring about a pleasant and stylish look and feel that L.L. intended. 
 
-> "and the rest is to be written…" -L.L.
+> *"and the rest is to be written…" -L.L.*
