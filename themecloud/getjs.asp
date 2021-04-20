@@ -80,8 +80,11 @@ if ($("#page_menu").html().indexOf("div") == -1)
 
 })
 
-
-var NextNum = 1;
+// PG addition start
+var pgidx = location.href.indexOf("/page/");
+var NextNum = pgidx == -1 ? 1 : parseInt(location.href.substring(pgidx + 6));
+// PG addition end
+//var NextNum = 1;
 function GetPosts(sCols, MinColWidth)
 {
 	var MinusX;
@@ -227,7 +230,26 @@ function GetMorePosts()
 
 	if (document.getElementById("tag_page").innerHTML == "")
 	{
+		// ---- PG addition start ----
+		if (location.href.indexOf("/search/") != -1) {
+			var match = location.href.match(/\/search\/[^/]{0,}\//i);
+			if (match) {
+				sPageName = match[0] + "page/";
+			} else {
+				match = location.href.match(/\/search\/[^/]{0,}[?#]/i);
+				if (match) {
+					sPageName = match[0].replace(/[?#]/, "") + "/page/";
+				} else {
+					match = location.href.match(/\/search\/[^/]{0,}/i);
+					sPageName = match[0] + "/page/";
+				}
+			}
+		} else {
+		// ---- PG addition end ----
 		sPageName = "/page/";
+		// ---- PG addition start ----
+		}
+		// ---- PG addition end ----
 		
 	}else
 	{
@@ -327,7 +349,7 @@ if ("14346" == "45708")
 		}
 		var sAppend;
 		
-		sAppend = "<div id='drop_shadow_id' class='drop_shadow'><img src='https://www.themecloud.co/themes/infinitev3/shadow600.png' width='100%'  ></div>"
+		sAppend = "<div id='drop_shadow_id' class='drop_shadow'><img src='" + chrome.runtime.getURL("themecloud/shadow600.png") + "' width='100%'  ></div>"
 	if ($("#post_shadow").html() == "YES")
 	{
 	$('#column' + x).append(sArray[i] + sAppend);
@@ -402,24 +424,3 @@ if ("14346" == "45708")
 
 
 }
-/*
-     FILE ARCHIVED ON 03:15:32 Mar 17, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 10:59:41 Apr 19, 2021.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 423.083
-  exclusion.robots: 0.163
-  exclusion.robots.policy: 0.155
-  RedisCDXSource: 7.612
-  esindex: 0.01
-  LoadShardBlock: 391.925 (3)
-  PetaboxLoader3.datanode: 238.651 (5)
-  CDXLines.iter: 16.515 (3)
-  load_resource: 182.756 (2)
-  PetaboxLoader3.resolve: 132.962 (2)
-*/
