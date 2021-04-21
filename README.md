@@ -3,8 +3,11 @@
 
 This is a chrome extension source code that displayes [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) and [bruitdefond-blog](https://bruitdefond-blog.tumblr.com/) in the former style that they used to be.
 
+## Nexflix documentary series "Crime Scene: The Vanishing at the Cecil Hotel"
+On 10th of February 2021, [Netflix](https://www.netflix.com/) released a four-episode documentary named [Crime Scene: The Vanishing at the Cecil Hotel](https://www.netflix.com/title/81183727) which features the mysterous death of the blogs' owner, Elisa Lam (alias L.L.), the various conspiracies and the final conclusion of how she passed away. Her [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) blog has been heavily referenced throughout the series. 
+
 ## Where are the posts?
-On 10th of February 2021, [Netflix](https://www.netflix.com/) released a four-episode documentary named [Crime Scene: The Vanishing at the Cecil Hotel](https://www.netflix.com/title/81183727) which features the mysterous death of the blogs' owner, Elisa Lam (alias L.L.), the various conspiracies and the final conclusion of how she passed away. Her [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) blog has been heavily referenced throughout the series. However, when one views the blog's homepage, they will be greeted by the blog title, epigraph and some basic Tumblr navigations, followed by a blank content. Even though the homepage is blank, the posts are not removed (touch wood!), instead they are not shown due to missing scripts that are used by the theme of her blog to display posts. When one clicks on the [archive page of her blog](https://nouvelle-nouveau.tumblr.com/archive), he/she can see the contents of the blog.
+After the Netflix documentary series aired, it drove many people to the Tumblr blog of Elisa Lam, perhaps out of interest into her life before her disappearance. However, when one views the blog's homepage, they will be greeted by the blog title, epigraph (“You’re always haunted by the idea you’re wasting your life.” — Chuck Palahniuk) and some basic Tumblr navigations, followed by a blank content. Even though the homepage is blank, the posts are not removed (touch wood!), but they are not shown due to missing scripts that are used by the theme of her blog to display posts. When one clicks on the [archive page of her blog](https://nouvelle-nouveau.tumblr.com/archive), he/she can see the contents of the blog using Tumblr's native archive user interface (**ui**).
 
 ### ThemeCloud Infinite v3
 The theme used by [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) is named "Infinite 3". It was designed by "blink and it's over" and was published on themecloud.co (this site no longer exists). Some of the theme assets were hosted under the domain of themecloud.co in order to prevent people from copying the HTML of the theme and apply it on their blog without paying. Unfortunately when the site called it quits between 2017 and 2018, the theme assets hosted on themecloud.co disappeared as well, leading to a non-functioning interface. This results in the blog not displaying anything on the homepage (as well as list of posts tagged with a keyword)
@@ -30,7 +33,7 @@ Release: https://github.com/snqzspg/nouvelle-nouveau-style/releases
 *Reminder to have the habit to disable this extension when you are not visiting [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) or any thematically related blogs.*
 
 ## Style Restoration
-The main purpose of this extension is to use a modified archived version of the Infinite 3 theme assets (modified to make it compatible to Chrome Extension standards and to slightly improve the functionality of the user interface) on [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) to restore the original style of the blog. 
+The main purpose of this extension is to use a modified archived version of the Infinite 3 theme assets (modified to make it compatible to Chrome Extension standards and to slightly improve the functionality of the ui) on [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) to restore the original style of the blog. 
 
 ![preview](https://user-images.githubusercontent.com/43104884/115401597-272ddb00-a21d-11eb-84e6-fe87491d8a59.jpg)
 
@@ -38,6 +41,6 @@ The main purpose of this extension is to use a modified archived version of the 
 This is still experimental and does not fully restore all the petty functionalities of the theme (Like buttons are still broken). It should be enough for people to browse through the blog as how it was before 2017. Infinite scroll currently works.
 
 ### Does one really need this extension to browse nouvelle-nouveau?
-Short answer is no. You can browse throught the [archive page](https://nouvelle-nouveau.tumblr.com/archive) without this extension. This extension is mainly to bring back the original aesthetics of the blog. This helps in realising how the artsy content posted by L.L. complements with the layout of the original blog user interface to bring about a pleasant and stylish look and feel that L.L. intended. 
+Short answer is no. You can browse throught the [archive page](https://nouvelle-nouveau.tumblr.com/archive) without this extension. This extension is mainly to bring back the original aesthetics of the blog. This helps in realising how the artsy content posted by L.L. complements with the layout of the original blog ui to bring about a pleasant and stylish look and feel that L.L. intended. 
 
 > *"and the rest is to be written…" -L.L.*
