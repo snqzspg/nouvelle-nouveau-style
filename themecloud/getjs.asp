@@ -205,6 +205,9 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 						sPageName = match[0] + "/page/";
 					}
 				}
+			} else /* PG modification start */ if (location.href.indexOf("/day/") != -1) {
+				sPageName = location.href.match(/\/day\/\d{1,}\/\d{1,}\/\d{1,}/)[0];
+				if (NextNum > 1) return;
 			} else {
 				// ---- PG addition end ----
 				sPageName = "/page/";
@@ -216,7 +219,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 		}
 
 		$.ajax({
-			url: sPageName + NextNum,
+			url: sPageName + (location.href.indexOf("/day/") != -1 ? "" : NextNum),
 			async: true,
 			success: function(data) {
 				//alert(data.getElementById("posts_hidden").innerHTML);
