@@ -1,7 +1,7 @@
 {
 	"name": "nouvelle-nouveau style",
-	"description": "[Alpha Edition] This attempts to display both nouvelle-nouveau and bruitdefond-blog Tumblr blogs in the style they used to be. Currently experimental.",
-	"version": "0.0.3",
+	"description": "This attempts to display both nouvelle-nouveau and bruitdefond-blog Tumblr blogs in the style they used to be. Currently in Beta.",
+	"version": "0.1.0",
 	"manifest_version": 3,
 	"content_scripts": [
 		{
