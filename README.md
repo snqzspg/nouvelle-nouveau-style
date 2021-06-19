@@ -1,5 +1,5 @@
-# Nouvelle/Nouveau Style Chrome Extension
-**Note**: This is currently in Alpha Experimental phase.
+# "Nouvelle/Nouveau" Style Chrome Extension
+**Note**: This project is open for public Beta testing.
 
 This is a chrome extension source code that displayes [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) and [bruitdefond-blog](https://bruitdefond-blog.tumblr.com/) in the former style that they used to be.
 
@@ -14,7 +14,7 @@ After the Netflix documentary series aired, it drove many people to the Tumblr b
 The theme used by [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) is named "Infinite 3". It was designed by "blink and it's over" and was published on themecloud.co (this site no longer exists). Some of the theme assets were hosted under the domain of themecloud.co in order to prevent people from copying the HTML of the theme and apply it on their blog without paying. Unfortunately when the site called it quits between 2017 and 2018, the theme assets hosted on themecloud.co disappeared as well, leading to a non-functioning interface. This results in the blog not displaying anything on the homepage (as well as list of posts tagged with a keyword)
 
 ## Security issues?
-Currently I have not published this extension on the Chrome Web Store, and thus it lacks a certificate for users to use in chrome (or chromium based browsers). In order to use this extension, one have to enable Developer mode in their chromium-based browser. This extension only accesses certain Tumblr blogs that need Infinite 3 theme assets. It does not, and not permitted to access any websites outside of Tumblr and it also does not collect information on users or track users visiting those blogs.
+Currently I have not published this extension on the Chrome Web Store (I don't want to pay for this), and thus it lacks a certificate for users to use in chrome (or chromium based browsers). In order to use this extension, one have to enable Developer mode in their chromium-based browser. This extension only accesses certain Tumblr blogs that need Infinite 3 theme assets. It does not, and not permitted to access any websites outside of Tumblr and it also does not collect information on users or track users visiting those blogs.
 
 *Note that people may publish this source code as official extensions on the Chrome Web Store. I cannot guarantee that those will not perform any malicious activies. Trust them at your own risk.*
 
@@ -41,7 +41,8 @@ The main purpose of this extension is to use a modified archived version of the 
 ### Complete functional restoration?
 This is still experimental and does not fully restore all the petty functionalities of the theme (Like buttons are still broken). It should be enough for people to browse through the blog as how it was before 2017. Infinite scroll currently works.
 
-### Does one really need this extension to browse nouvelle-nouveau?
+## Does one really need this extension to browse nouvelle-nouveau?
 Short answer is no. You can browse throught the [archive page](https://nouvelle-nouveau.tumblr.com/archive) without this extension. This extension is mainly to bring back the original aesthetics of the blog. This helps in realising how the artsy content posted by L.L. complements with the layout of the original blog ui to bring about a pleasant and stylish look and feel that L.L. intended. 
 
-> *"and the rest is to be written…" -L.L.*
+## Visit posts made on a certain day
+From version 0.1.0 onwards, you can now view posts that [nouvelle-nouveau](https://nouvelle-nouveau.tumblr.com/) made on a certain date by entering `https://nouvelle-nouveau.tumblr.com/day/yyyy/mm/dd`. This is not really possible (as I know of) on Tumblr's archive page (it is only specific to the month).
