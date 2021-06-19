@@ -23,7 +23,7 @@ It is also important to have the practice to disable all Developer Mode extensio
 ## How to install?
 Release: https://github.com/snqzspg/nouvelle-nouveau-style/releases
   1. Download either the release or clone this repository
-  2. Extract the crx / zip file
+  2. Extract the crx / zip file (zip file is recommended for those without special decompression tools like 7-zip, especially for Mac users)
   3. Open Extensions Page in your Chromium-based browser (Google Chrome)
   4. Enable Developer Mode
   5. Drag the extracted folder (nouvelle-nouveau-style-main folder if you cloned the repository) into the Extensions Page
